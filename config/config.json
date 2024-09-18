@@ -1,23 +1,23 @@
 {
   "development": {
-    "username": "postgres",
-    "password": "postgres",
-    "database": "b57personalweb",
-    "host": "127.0.0.1",
+    "username": "b57personalweb_owner",
+    "password": "8yt2LivHVmoF",
+    "database": "b57personalweb?sslmode=require",
+    "host": "ep-raspy-truth-a1lfjj80.ap-southeast-1.aws.neon.tech",
     "dialect": "postgres"
   },
   "test": {
-    "username": "root",
-    "password": null,
-    "database": "database_test",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+    "username": "b57personalweb_owner",
+    "password": "8yt2LivHVmoF",
+    "database": "b57personalweb?sslmode=require",
+    "host": "ep-raspy-truth-a1lfjj80.ap-southeast-1.aws.neon.tech",
+    "dialect": "postgres"
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+    "username": "b57personalweb_owner",
+    "password": "8yt2LivHVmoF",
+    "database": "b57personalweb?sslmode=require",
+    "host": "ep-raspy-truth-a1lfjj80.ap-southeast-1.aws.neon.tech",
+    "dialect": "postgres"
   }
 }
