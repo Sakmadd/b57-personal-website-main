@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "ini project pertama saya",
   "main": "index.js",
+  "engines": {
+  "node": "14.x"
+  },
   "scripts": {
     "postinstall": "sequelize-cli db:migrate",
     "start": "node index.js",
