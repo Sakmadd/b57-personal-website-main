@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e6e6e6;
+  min-height: 100vh;
+  margin-top: 56px;
+  display: flex;
+  flex-direction: column;
+}
+
+.alert-container {
+  position: fixed;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  width: auto;
+  max-width: 500px;
+}
+
+/* Animasi alert */
+@keyframes fadeOutUp {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+.fade-out {
+  animation: fadeOutUp 1s forwards;
+}
+

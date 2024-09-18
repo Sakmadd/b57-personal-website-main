@@ -1,0 +1,43 @@
+<nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark">
+	<div class="container-fluid">
+		<a class="navbar-brand fw-bold" href="/">Izulsyauki</a>
+		<button class="navbar-toggler border border-1" type="button" data-bs-toggle="collapse"
+			data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+			aria-label="Toggle navigation" style="color: white">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ms-auto me-2 mb-lg-0 pe-1">
+				{{#if user}}
+				<li class="nav-item">
+					<a class="nav-link text-white fw-bold" aria-current="page" href="/">Hello, {{user.name}}!</a>
+				</li>
+				{{/if}}
+				<li class="nav-item">
+					<a class="nav-link text-white" aria-current="page" href="/">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-white" href="/testimoni">Testimoni</a>
+				</li>
+
+				{{#if user}}
+				<li class="nav-item">
+					<a class="nav-link text-white" href="/add-project">Add Project</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-white" href="/logout">Logout</a>
+				</li>
+				{{else}}
+				<li class="nav-item">
+					<a class="nav-link text-white" href="/login">Login</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-white" href="/register">Register</a>
+				</li>
+				{{/if}}
+			</ul>
+			<a href="/contact-me"><button class="btn btn-light" type="submit">Contact Me</button></a>
+		</div>
+	</div>
+</nav>
