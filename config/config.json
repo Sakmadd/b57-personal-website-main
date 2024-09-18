@@ -2,7 +2,7 @@
   "development": {
     "username": "b57personalweb_owner",
     "password": "8yt2LivHVmoF",
-    "database": "b57personalweb?sslmode=require",
+    "database": "b57personalweb",
     "host": "ep-raspy-truth-a1lfjj80.ap-southeast-1.aws.neon.tech",
     "dialect": "postgres",
     "dialectOptions" : {
@@ -15,15 +15,27 @@
   "test": {
     "username": "b57personalweb_owner",
     "password": "8yt2LivHVmoF",
-    "database": "b57personalweb?sslmode=require",
+    "database": "b57personalweb",
     "host": "ep-raspy-truth-a1lfjj80.ap-southeast-1.aws.neon.tech",
-    "dialect": "postgres"
+    "dialect": "postgres",
+    "dialectOptions" : {
+     "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      }
+    }
   },
   "production": {
     "username": "b57personalweb_owner",
     "password": "8yt2LivHVmoF",
-    "database": "b57personalweb?sslmode=require",
+    "database": "b57personalweb",
     "host": "ep-raspy-truth-a1lfjj80.ap-southeast-1.aws.neon.tech",
-    "dialect": "postgres"
+    "dialect": "postgres",
+    "dialectOptions" : {
+     "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+     }
+  }
   }
 }
