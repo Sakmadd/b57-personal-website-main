@@ -4,7 +4,13 @@
     "password": "8yt2LivHVmoF",
     "database": "b57personalweb?sslmode=require",
     "host": "ep-raspy-truth-a1lfjj80.ap-southeast-1.aws.neon.tech",
-    "dialect": "postgres"
+    "dialect": "postgres",
+    "dialectOptions" : {
+     "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      }
+    }
   },
   "test": {
     "username": "b57personalweb_owner",
